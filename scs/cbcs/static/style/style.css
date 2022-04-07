@@ -1,0 +1,100 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+li{
+    list-style-type: none;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    color: blueviolet;
+    background-color: #eee;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1em;
+}
+
+ul li{
+    padding: 3px 10px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+/*  Student styles  */
+.student{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    width: 50rem;
+    height: 22rem;
+    border:3px solid rgb(37, 17, 56);
+    border-radius: 1rem;
+    margin:auto;
+    margin-top: 3em;
+    padding: .5rem;
+
+}
+
+.student h3,.student h4{
+    font-weight: 500;
+}
+.md{
+    padding: .5rem .25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: .1rem solid #333;
+}
+
+.student .courses{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.image{
+    width: 170px;
+    height: 200px;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #3e3e3e;
+}
+
+.profile h3{
+    text-align: center;
+    margin-top: .3rem;
+    font-weight: 400;
+}
+.courses{
+    margin-top: .7rem;
+}
+
+.course{
+    margin: .3rem;
+    border-right: 1px solid black;
+}
+.course h4{
+    padding: .1rem;
+    color: green;
+}
+
+.course h3{
+    padding: .15rem;
+}
+
+.course .wr{
+    color: red;
+}
