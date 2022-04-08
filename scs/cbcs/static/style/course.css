@@ -1,0 +1,20 @@
+.course-selection{
+    width: 40rem;
+    height: 10rem;
+    padding: 1rem;
+    margin: .3rem auto;
+    border: 1px solid blueviolet;
+    font-size: larger;
+}
+
+.staff-option{
+    margin: .5rem;
+}
+
+.staff-option label,.staff-option select{
+    padding: .2rem;
+}
+
+.staff-option option{
+    size: 1rems;
+}

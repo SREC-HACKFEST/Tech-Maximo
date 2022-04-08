@@ -1,0 +1,17 @@
+{% include 'base.html'%}
+<form action="/csel" method="post">
+    {% for x in courses %}
+    <div class="course-selection">
+        <label for="course">{{x.course_name}}</label>
+        {% for z in tc%}
+        <p>Option {{z}}</p>
+        <select name="staff{{z}}" id="staff{{z}}" class="staff-option">
+            {% for y in teacher %}
+                <option value="{{y.teacher_name}}">{{y.teacher_name}}</option>
+            {% endfor %}
+        </select>
+        {% endfor %}
+    </div>
+        {% endfor %}
+    </form>
+
